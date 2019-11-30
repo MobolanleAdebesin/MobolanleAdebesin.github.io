@@ -1,0 +1,17 @@
+.Resume {
+  background-color: #31bb8b;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Resume-name {
+  font-family: "Krungthep", sans-serif;
+  position: absolute;
+  text-transform: uppercase;
+  top: 9%;
+  left: 30%;
+}
+.Resume-image {
+  height: 75%;
+}

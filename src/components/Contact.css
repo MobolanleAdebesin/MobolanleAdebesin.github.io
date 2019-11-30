@@ -1,0 +1,15 @@
+.Contact {
+  background-color: #31bb8b;
+  height: 100vh;
+}
+.Contact-name {
+  position: absolute;
+  top: 9%;
+  left: 7%;
+  font-family: "Krungthep", sans-serif;
+  text-transform: uppercase;
+}
+.Contact-blurb {
+  text-align: center;
+  padding: 10%;
+}
