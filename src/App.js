@@ -47,11 +47,13 @@ class App extends Component {
           ></a>
           <a
             className="About-icon fa fa-github-square"
+            target="_blank"
             href="https://github.com/MobolanleAdebesin"
             rel="noopener"
           ></a>
           <a
             className="About-icon fa fa-linkedin"
+            target="_blank"
             href="https://www.linkedin.com/in/mobolanle-adebesin/"
             rel="noopener"
           ></a>
