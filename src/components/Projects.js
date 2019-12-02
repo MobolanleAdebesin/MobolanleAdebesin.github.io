@@ -21,6 +21,7 @@ class Projects extends Component {
               className="Project-icon fa fa-github-square"
               href="https://github.com/MobolanleAdebesin/bookpals-front-end"
               rel="noopener"
+              target="_blank"
             >
               Frontend Repo
             </a>
@@ -28,6 +29,7 @@ class Projects extends Component {
               className="Project-icon fa fa-github-square"
               href="https://github.com/MobolanleAdebesin/bookpals-back-end"
               rel="noopener"
+              target="_blank"
             >
               Backend Repo
             </a>
@@ -35,6 +37,7 @@ class Projects extends Component {
               className="Project-icon fa fa-link"
               href="https://stupefied-knuth-a58fed.netlify.com/"
               rel="noopener"
+              target="_blank"
             >
               Deployed Site
             </a>
@@ -53,6 +56,7 @@ class Projects extends Component {
               className="Project-icon fa fa-github-square"
               href="https://github.com/MobolanleAdebesin/trivia-game"
               rel="noopener"
+              target="_blank"
             >
               Repo
             </a>
@@ -60,6 +64,7 @@ class Projects extends Component {
               className="Project-icon fa fa-link"
               href="https://mobolanleadebesin.github.io/trivia-game/"
               rel="noopener"
+              target="_blank"
             >
               Deployed Site
             </a>
@@ -79,6 +84,7 @@ class Projects extends Component {
               className=" Project-icon fa fa-github-square"
               href="https://github.com/MobolanleAdebesin/MobolanleAdebesin.github.io"
               rel="noopener"
+              target="_blank"
             >
               Repo
             </a>
@@ -86,6 +92,7 @@ class Projects extends Component {
               className="Project-icon fa fa-link"
               href="https://mobolanleadebesin.github.io/"
               rel="noopener"
+              target="_blank"
             >
               Deployed Site
             </a>
