@@ -11,7 +11,7 @@ class About extends Component {
         <div className="test">
           <img className="About-profile" src={profile} alt="profile" />
           <div className="About-intro">
-            <h6 className="About-title">Full Stack Developer | Scientist</h6>
+            <h6 className="About-title">Software Engineer</h6>
             <p className="About-description">
               While my approach to programming is
               <strong> [analytical]</strong> and

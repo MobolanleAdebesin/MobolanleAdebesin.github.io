@@ -1,5 +1,5 @@
 .Resume {
-  background-color: #31bb8b;
+  background-color: #b9deecb7;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -13,5 +13,5 @@
   left: 30%;
 }
 .Resume-image {
-  height: 75%;
+  width: 40%;
 }
