@@ -5,7 +5,7 @@ import Projects from "./components/Projects.js";
 import Resume from "./components/Resume.js";
 import Contact from "./components/Contact.js";
 import About from "./components/About.js";
-import { PDFViewer } from "@react-pdf/renderer";
+import myResume from "./myResume.pdf";
 
 class App extends Component {
   constructor(props) {
@@ -26,9 +26,9 @@ class App extends Component {
           <Link className="App-link" to="/Projects">
             Projects
           </Link>
-          <Link className="App-link" to="/Resume">
+          <a className="App-link" href={myResume} target="_blank">
             Resume
-          </Link>
+          </a>
           <Link className="App-link" to="/Contact">
             Contact
           </Link>
