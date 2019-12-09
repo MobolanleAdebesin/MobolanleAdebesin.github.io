@@ -17,7 +17,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <nav className="navbar">
+        {/* <nav className="navbar-expand-lg navbar-light bg-light">
           <Link className="App-link" to="/">
             About
           </Link>
@@ -28,6 +28,17 @@ class App extends Component {
           <Link className="App-link" to="/Contact">
             Contact
           </Link>
+        </nav> */}
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <a className="navbar-brand" href="#">
+            Navbar
+          </a>
+          <ul className="navbar-nav">
+            <Link to="">About</Link>
+            <Link to="">Projects</Link>
+            <Link to="">Resume</Link>
+            <Link to="">Contacts</Link>
+          </ul>
         </nav>
         <Route path="/" exact component={About}></Route>
         <Route path="/Projects" exact component={Projects}></Route>
