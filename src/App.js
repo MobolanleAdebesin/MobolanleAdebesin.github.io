@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./App.css";
 import Projects from "./components/Projects.js";
-import Resume from "./components/Resume.js";
 import Contact from "./components/Contact.js";
 import About from "./components/About.js";
 
@@ -32,7 +31,6 @@ class App extends Component {
         </nav>
         <Route path="/" exact component={About}></Route>
         <Route path="/Projects" exact component={Projects}></Route>
-        <Route path="/Resume" exact component={Resume}></Route>
         <Route path="/Contact" exact component={Contact}></Route>
 
         <footer className="App-footer">
