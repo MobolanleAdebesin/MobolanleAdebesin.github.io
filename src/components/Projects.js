@@ -6,29 +6,48 @@ import Tinder from "./images/Tinder.png";
 class Projects extends Component {
   render() {
     return (
-      <div>
-        <div className="card bg-dark text-white">
-          <img src={Bookpals} className="card-img" alt="..." />
-          <div className="card-img-overlay">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
-            <p className="card-text">Last updated 3 mins ago</p>
+      <div className="container">
+        <div className="card-deck">
+          <div className="card">
+            <img src={Bookpals} class="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p className="card-text">
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="card bg-dark text-white">
-          <img src={Trivia} className="card-img" alt="..." />
-          <div className="card-img-overlay">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
-            <p className="card-text">Last updated 3 mins ago</p>
+          <div className="card">
+            <img src={Trivia} class="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">
+                This card has supporting text below as a natural lead-in to
+                additional content.
+              </p>
+              <p className="card-text">
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src={Tinder} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </p>
+              <p className="card-text">
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -37,97 +56,3 @@ class Projects extends Component {
 }
 
 export default Projects;
-
-// <div className="Projects">
-//   <div className="Project-container">
-//     <img className="Project-image" src={Bookpals} alt="" />
-//     <p className="Project-description">
-//       The purpose of this project was to build a single page application
-//       with full CRUD functionality using a REST API built from scratch
-//       within one week. Users can add, update, delete, and view their
-//       favorite books. Built with MongoDB, Mongoose, Express, React, Node.
-//       js
-//     </p>
-//     <div className="Project-link-container">
-//       <a
-//         className="Project-icon fa fa-github-square"
-//         href="https://github.com/MobolanleAdebesin/bookpals-front-end"
-//         rel="noopener"
-//         target="_blank"
-//       >
-//         Frontend Repo
-//       </a>
-//       <a
-//         className="Project-icon fa fa-github-square"
-//         href="https://github.com/MobolanleAdebesin/bookpals-back-end"
-//         rel="noopener"
-//         target="_blank"
-//       >
-//         Backend Repo
-//       </a>
-//       <a
-//         className="Project-icon fa fa-link"
-//         href="https://stupefied-knuth-a58fed.netlify.com/"
-//         rel="noopener"
-//         target="_blank"
-//       >
-//         Deployed Site
-//       </a>
-//     </div>
-//   </div>
-//   <div className="Project-container">
-//     <img className="Project-image" src={Trivia} alt="" />
-//     <p className="Project-description">
-//       The purpose of this project was to build and deploy an interactive
-//       online game. I used object-oriented programming and Document Object
-//       Model to create a minimum viable product in four days. Built using
-//       HTML, CSS, and JavaScript.
-//     </p>
-//     <div className="Project-icon Project-link-container">
-//       <a
-//         className="Project-icon fa fa-github-square"
-//         href="https://github.com/MobolanleAdebesin/trivia-game"
-//         rel="noopener"
-//         target="_blank"
-//       >
-//         Repo
-//       </a>
-//       <a
-//         className="Project-icon fa fa-link"
-//         href="https://mobolanleadebesin.github.io/trivia-game/"
-//         rel="noopener"
-//         target="_blank"
-//       >
-//         Deployed Site
-//       </a>
-//     </div>
-//   </div>
-//   <div className="Project-container">
-//     <img className="Project-image" src={Tinder} alt="" />
-//     <p className="Project-description">
-//       This project focuses on recreating a popular dating app website
-//       homepage using the fundamentals of HTML and CSS. The life cycle of
-//       this project began with the development of a wireframe based on the
-//       layout of the original site, it demonstrates my ability to design a
-//       mobile-first responsive webpage from start to finish.
-//     </p>
-//     <div className="Project-link-container">
-//       <a
-//         className=" Project-icon fa fa-github-square"
-//         href="https://github.com/MobolanleAdebesin/MobolanleAdebesin.github.io"
-//         rel="noopener"
-//         target="_blank"
-//       >
-//         Repo
-//       </a>
-//       <a
-//         className="Project-icon fa fa-link"
-//         href="https://mobolanleadebesin.github.io/"
-//         rel="noopener"
-//         target="_blank"
-//       >
-//         Deployed Site
-//       </a>
-//     </div>
-//   </div>
-// </div>

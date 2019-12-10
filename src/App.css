@@ -1,11 +1,21 @@
+html {
+  height: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 body {
   background-color: #e2ecf0;
   text-align: center;
+  box-sizing: border-box;
+  height: 100%;
 }
 .App-footer {
   flex-shrink: 0;
   background-color: rgba(144, 206, 218, 0.377);
-  height: 10%;
+  min-height: 64px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -24,4 +34,35 @@ body {
 }
 .text-white {
   font-weight: 700;
+}
+
+@media all and (max-width: 320px) {
+  .container {
+    min-height: 65vh;
+  }
+}
+
+@media all and (min-width: 321px) and (max-width: 374px) {
+  .container {
+    min-height: 70vh;
+  }
+}
+
+@media all and (min-width: 375px) and (max-width: 767px) {
+  .container {
+    min-height: 75vh;
+  }
+}
+
+@media all and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    min-height: 81vh;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .container {
+    min-height: 91vh;
+    max-height: 91vh;
+  }
 }

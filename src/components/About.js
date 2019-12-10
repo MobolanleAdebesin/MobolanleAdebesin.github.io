@@ -4,7 +4,7 @@ import profile from "../profile.png";
 class About extends Component {
   render() {
     return (
-      <main className="About-body">
+      <main className="container">
         <div className="name-container">
           <h2 className="About-name">Bola Adebesin</h2>
         </div>
