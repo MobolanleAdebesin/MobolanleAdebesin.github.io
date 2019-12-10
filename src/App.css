@@ -1,16 +1,10 @@
-.App-link {
-  color: black;
-  font-family: "Krungthep", sans-serif;
-}
-.navbar {
-}
-.App-link:hover {
-  color: #31bb8b;
-  text-decoration: none;
+body {
+  background-color: #e2ecf0;
+  text-align: center;
 }
 .App-footer {
   flex-shrink: 0;
-  background-color: #b9deec31;
+  background-color: rgba(144, 206, 218, 0.377);
   height: 10%;
   display: flex;
   justify-content: space-around;
@@ -24,4 +18,10 @@
 }
 .About-icon:focus {
   color: black;
+}
+.bg-info {
+  opacity: 0.4;
+}
+.text-white {
+  font-weight: 700;
 }

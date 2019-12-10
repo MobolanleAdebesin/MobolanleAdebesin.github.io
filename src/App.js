@@ -4,6 +4,7 @@ import "./App.css";
 import Projects from "./components/Projects.js";
 import Contact from "./components/Contact.js";
 import About from "./components/About.js";
+import myResume from "./myResume.pdf";
 
 class App extends Component {
   constructor(props) {
@@ -17,27 +18,25 @@ class App extends Component {
   render() {
     return (
       <Router>
-        {/* <nav className="navbar-expand-lg navbar-light bg-light">
-          <Link className="App-link" to="/">
-            About
+        <nav className="navbar navbar-expand-lg navbar-light bg-info">
+          <Link to="/" className="navbar-brand text-white">
+            Home
           </Link>
-          <Link className="App-link" to="/Projects">
-            Projects
-          </Link>
-
-          <Link className="App-link" to="/Contact">
-            Contact
-          </Link>
-        </nav> */}
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
           <ul className="navbar-nav">
-            <Link to="">About</Link>
-            <Link to="">Projects</Link>
-            <Link to="">Resume</Link>
-            <Link to="">Contacts</Link>
+            <Link to="/Projects" className="nav-item nav-link link text-white">
+              Projects
+            </Link>
+            <Link to="/Contact" className="nav-item nav-link link text-white">
+              Contacts
+            </Link>
+            <a
+              className="nav-item nav-link link text-white"
+              href={myResume}
+              target="__blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </a>
           </ul>
         </nav>
         <Route path="/" exact component={About}></Route>
@@ -49,19 +48,19 @@ class App extends Component {
             className="About-icon fa fa-medium"
             href="https://medium.com/@bolaadebesin"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           ></a>
           <a
             className="About-icon fa fa-github-square"
             target="_blank"
             href="https://github.com/MobolanleAdebesin"
-            rel="noopener"
+            rel="noopener noreferrer"
           ></a>
           <a
             className="About-icon fa fa-linkedin"
             target="_blank"
             href="https://www.linkedin.com/in/mobolanle-adebesin/"
-            rel="noopener"
+            rel="noopener noreferrer"
           ></a>
         </footer>
       </Router>
