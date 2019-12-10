@@ -1,6 +1,51 @@
 html {
   height: 100%;
 }
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+.link-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.text-white:hover {
+  opacity: 0.7;
+}
+.navbar-brand {
+  font-size: 2vw;
+  margin-left: 0.5vw;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  padding-right: 1.4vw;
+  color: white;
+}
+.nav-item {
+  font-size: 1.3vw;
+}
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 1vw;
+}
+.fa:hover {
+  text-decoration: none;
+}
+.About-icon {
+  font-size: 2vw;
+  color: rgb(25, 100, 215);
+  margin-left: 1vw;
+}
+.About-icon:hover {
+  color: rgb(5, 75, 180);
+}
+.About-icon:active {
+  color: rgb(0, 50, 125);
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -21,22 +66,14 @@ body {
   align-items: center;
   font-family: "Roboto", sans-serif;
 }
-.About-icon {
-  font-size: 1.5rem;
-  color: black;
-  text-decoration: none;
-}
-.About-icon:focus {
-  color: black;
-}
-.bg-info {
-  opacity: 0.4;
+.nav-background {
+  background-color: #94ced9;
 }
 .text-white {
   font-weight: 700;
 }
 
-@media all and (max-width: 320px) {
+/* @media all and (max-width: 320px) {
   .container {
     min-height: 65vh;
   }
@@ -65,4 +102,8 @@ body {
     min-height: 91vh;
     max-height: 91vh;
   }
-}
+  .About-icon {
+    font-size: 2vw;
+    margin-left: 1vw;
+  }
+} */
