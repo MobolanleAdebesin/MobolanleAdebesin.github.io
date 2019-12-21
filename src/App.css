@@ -1,162 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
-
-html {
-  height: 100%;
-}
-body {
-  padding: 6vw;
-}
-/* .App-container {
-  z-index: -1;
-} */
-.nav-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-}
-.link-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.text-white:hover {
-  opacity: 0.7;
-}
-.navbar-brand {
-  font-size: 2vw;
-  margin-left: 0.5vw;
-  padding-right: 1.4vw;
-  color: white;
-}
-.nav-item {
-  font-size: 1.3vw;
-}
-
-.fa:hover {
-  text-decoration: none;
-}
-.About-icon {
-  font-size: 2vw;
-  color: rgb(25, 100, 215);
-  margin-left: 1vw;
-}
-.About-icon:hover {
-  color: rgb(5, 75, 180);
-}
-.About-icon:active {
-  color: rgb(0, 50, 125);
-}
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  z-index: -1;
-}
-body {
-  background-color: #e2ecf0;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  height: 100%;
 }
-.App-footer {
-  flex-shrink: 0;
-  background-color: rgba(144, 206, 218, 0.377);
-  min-height: 64px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: "Roboto", sans-serif;
-}
-.nav-background {
-  background-color: #94ced9;
-}
-.text-white {
-  font-weight: 700;
-}
-.icon-container {
-  display: none;
-}
-.About-profile {
-  width: 50vw;
-}
-.link-container {
+
+.App-container {
+  /* background-color: papayawhip; */
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  margin: 1rem;
 }
-.About-name {
-  font-size: 1.5rem;
+
+.App-navigation {
 }
-.About-title {
-  font-size: 1.5rem;
-}
-.navbar {
-  display: none;
-}
-.App-hamburger {
+
+.App-bars-container {
   display: flex;
   justify-content: flex-end;
+  /* background-color: lightblue; */
+  margin: 0 1rem;
 }
-.App-menu {
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: white;
-  opacity: 0.8;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
 .hidden {
   display: none;
-}
-
-@media all and (min-width: 321px) and (max-width: 768px) {
-  .About-title {
-    font-size: 1.3rem;
-  }
-}
-
-@media all and (min-width: 769px) and (max-width: 991px) {
-  .nav-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-  }
-  .link-container {
-    display: flex;
-    flex-direction: column;
-  }
-  .icon-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 1vw;
-  }
-  .About-profile {
-    width: 30vw;
-  }
-  .About-title {
-    font-size: 1.5rem;
-  }
-}
-
-@media all and (min-width: 992px) {
-  .navbar-brand {
-    border-right: 1px solid rgba(255, 255, 255, 0.5);
-  }
-  .icon-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 1vw;
-  }
-  .About-profile {
-    width: 20vw;
-  }
 }

@@ -10,71 +10,43 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      icon: "fa fa-bars",
-      navbar: "navbar",
-      menu: "hidden"
+      nav: "App-navigation"
     };
   }
-  slide = () => {
-    if (this.state.menu == "hidden") {
-      this.setState({ menu: "App-menu" });
-    } else if (this.state.menu == "App-menu") {
-      this.setState({ menu: "hidden" });
-    }
+
+  hideNavbar = () => {
+    this.state.nav === "App-navigation"
+      ? this.setState({ nav: "hidden" })
+      : this.setState({ nav: "App-navigation" });
   };
 
   render() {
     return (
       <Router>
-        <div className={this.state.menu}></div>
         <div className="App-container">
-          <div className="App-hamburger">
-            <i class="fa fa-bars" onClick={this.slide}></i>
-          </div>
-
-          <nav className="navbar navbar-expand-lg navbar-light nav-background">
-            <Link to="/" className="navbar-brand text-white">
+          <nav className="hidden">
+            <Link to="/" className="App-home-link">
               Home
             </Link>
-            <div className="nav-container">
-              <ul className="navbar-nav link-container">
-                <Link to="/Projects" className="nav-item nav-link text-white">
-                  Projects
-                </Link>
-                <Link to="/Contact" className="nav-item nav-link text-white">
-                  Contacts
-                </Link>
-                <a
-                  className="nav-item nav-link text-white"
-                  href={myResume}
-                  target="__blank"
-                  rel="noopener noreferrer"
-                >
-                  Resume
-                </a>
+            <div>
+              <ul>
+                <li className="App-navigation-link">
+                  <Link to="/Projects">Projects</Link>
+                </li>
+                <li className="App-navigation-link">
+                  <Link to="/Contact">Contact</Link>
+                </li>
+                <li className="App-navigation-link">
+                  <a href={myResume} target="__blank" rel="noopener noreferrer">
+                    Resume
+                  </a>
+                </li>
               </ul>
-              <div className="icon-container">
-                <a
-                  className="About-icon fa fa-medium"
-                  href="https://medium.com/@bolaadebesin"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                />
-                <a
-                  className="About-icon fa fa-github-square"
-                  target="_blank"
-                  href="https://github.com/MobolanleAdebesin"
-                  rel="noopener noreferrer"
-                />
-                <a
-                  className="About-icon fa fa-linkedin"
-                  target="_blank"
-                  href="https://www.linkedin.com/in/mobolanle-adebesin/"
-                  rel="noopener noreferrer"
-                />
-              </div>
             </div>
           </nav>
+          <div className="App-bars-container">
+            <i className="fa fa-bars App-bars" onClick={this.hideNavbar}></i>
+          </div>
           <Route path="/" exact component={About}></Route>
           <Route path="/Projects" exact component={Projects}></Route>
           <Route path="/Contact" exact component={Contact}></Route>

@@ -6,10 +6,10 @@ import Tinder from "./images/Tinder.png";
 class Projects extends Component {
   render() {
     return (
-      <div className="container">
+      <div>
         <div className="card-deck">
           <div className="card">
-            <img src={Bookpals} class="card-img-top" alt="..." />
+            <img src={Bookpals} className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">Card title</h5>
               <p className="card-text">
@@ -35,7 +35,7 @@ class Projects extends Component {
               </p>
             </div>
           </div>
-          <div class="card">
+          <div className="card">
             <img src={Tinder} className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">Card title</h5>

@@ -1,4 +1,15 @@
+.About-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+}
+.About-profile {
+  width: 10rem;
+}
 .About-title {
-  font-family: "Pacifico", cursive;
-  margin: 2vw 0;
+  margin: 1rem;
+}
+.About-description {
+  text-align: center;
 }
