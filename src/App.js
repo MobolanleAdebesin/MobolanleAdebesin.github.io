@@ -47,6 +47,32 @@ class App extends Component {
           <div className="App-bars-container">
             <i className="fa fa-bars App-bars" onClick={this.hideNavbar}></i>
           </div>
+          <div className="App-slide-menu">
+            <nav className="App-slide-navigation">
+              <Link to="/" className="App-home-link">
+                Home
+              </Link>
+              <div>
+                <ul>
+                  <li className="App-navigation-link">
+                    <Link to="/Projects">Projects</Link>
+                  </li>
+                  <li className="App-navigation-link">
+                    <Link to="/Contact">Contact</Link>
+                  </li>
+                  <li className="App-navigation-link">
+                    <a
+                      href={myResume}
+                      target="__blank"
+                      rel="noopener noreferrer"
+                    >
+                      Resume
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
           <Route path="/" exact component={About}></Route>
           <Route path="/Projects" exact component={Projects}></Route>
           <Route path="/Contact" exact component={Contact}></Route>

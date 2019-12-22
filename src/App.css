@@ -6,21 +6,27 @@
 }
 
 .App-container {
-  /* background-color: papayawhip; */
   display: flex;
   flex-direction: column;
   height: 100vh;
-  margin: 1rem;
+  position: relative;
 }
 
 .App-navigation {
+}
+.App-slide-menu {
+  height: 100%;
+  width: 50%;
+  background-color: lightblue;
+  position: absolute;
+  opacity: 0.8;
 }
 
 .App-bars-container {
   display: flex;
   justify-content: flex-end;
   /* background-color: lightblue; */
-  margin: 0 1rem;
+  margin: 1rem;
 }
 .hidden {
   display: none;
