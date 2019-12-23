@@ -35,12 +35,13 @@
 .App-unordered-list {
   list-style: none;
 }
-.App-navigation-link,
-.App-home-link {
+.App-navigation-link {
   color: black;
 }
-.App-navigation-link:hover,
-.App-home-link:hover {
+li {
+  margin: 3rem 0;
+}
+.App-navigation-link:hover {
   color: Tomato;
 }
 

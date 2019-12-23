@@ -13,30 +13,47 @@ class App extends Component {
     this.state = {
       nav: "App-navigation",
       style: {
-        left: "-160px",
+        left: "-50%",
         transition: "left 1s"
-      }
+      },
+      isMenuOpen: false
     };
   }
-
-  hideNavbar = () => {
-    this.state.nav === "App-navigation"
-      ? this.setState({ nav: "hidden" })
-      : this.setState({ nav: "App-navigation" });
-    this.hideSlidingMenu();
+  toggleSlidingMenu = () => {
+    this.state.style.left === "-50%"
+      ? this.setState({
+          style: { ...this.state.style, left: "0px" },
+          isMenuOpen: true
+        })
+      : this.setState({
+          style: { ...this.state.style, left: "-50%" },
+          isMenuOpen: false
+        });
   };
-  hideSlidingMenu = () => {
-    this.state.style.left === "-160px"
-      ? this.setState({ style: { ...this.state.style, left: "0px" } })
-      : this.setState({ style: { ...this.state.style, left: "-160px" } });
+  closeMenu = e => {
+    e.persist();
+    let menu = document.getElementById("menu");
+    let slidingNav = document.getElementById("slidingNav");
+    let slidingList = document.getElementById("slidingList");
+    console.log(e.target.className);
+    if (
+      e.target.className !== "App-slide-navigation" &&
+      e.target.className !== "App-slide-menu" &&
+      e.target.className !== "App-unordered-list" &&
+      e.target.className !== "App-navigation-link"
+    ) {
+      if (this.state.isMenuOpen) {
+        this.toggleSlidingMenu();
+      }
+    }
   };
 
   render() {
     return (
       <Router>
-        <div className="App-container">
+        <div className="App-container" onClick={this.closeMenu}>
           <nav className="hidden">
-            <Link to="/" className="App-home-link">
+            <Link to="/" className="App-navigation-link">
               Home
             </Link>
             <div>
@@ -65,7 +82,10 @@ class App extends Component {
             </div>
           </nav>
           <div className="App-bars-container">
-            <i className="fa fa-bars App-bars" onClick={this.hideNavbar}></i>
+            <i
+              className="fa fa-bars App-bars"
+              onClick={this.toggleSlidingMenu}
+            ></i>
           </div>
           <div
             className="App-slide-menu"
@@ -74,12 +94,12 @@ class App extends Component {
             onClick={this.getWidth}
             style={this.state.style}
           >
-            <nav className="App-slide-navigation">
-              <Link to="/" className="App-home-link">
+            <nav className="App-slide-navigation" id="slidingNav">
+              <Link to="/" className="App-navigation-link">
                 Home
               </Link>
               <div>
-                <ul className="App-unordered-list">
+                <ul className="App-unordered-list" id="slidingList">
                   <li>
                     <Link className="App-navigation-link" to="/Projects">
                       Projects
