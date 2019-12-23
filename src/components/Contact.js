@@ -4,30 +4,29 @@ import "./Contact.css";
 class Contact extends Component {
   render() {
     return (
-      <div className="container">
-        {/* <h2 className="Contact-name">Contact Details</h2> */}
-
-        <h6>
+      <div className="Contact">
+        <h2> Keep in Touch</h2>
+        <blockquote>
           The most important things in life are the connections you make with
-          others ~ Tom Ford.
-        </h6>
-        <p>Email: bolaadebesin@gmail.com</p>
-        <p>Phone: 240-605-8753</p>
-        <p>
-          Click the icon below to send me a message. I will respond as soon as
-          possible.
-        </p>
+          others. <cite> ~ Tom Ford</cite>
+        </blockquote>
+
+        <p className="Contact-email">bolaadebesin@gmail.com</p>
         <a
           href="mailto:bolaadebesin@gmail.com"
           title="click to email me"
-          rel="noopener"
+          rel="noopener noreferrer"
+          className="Contact-icon-link"
         >
-          <div className="section-icon">
-            <span>
-              <i className="fa fa-envelope"></i>
-            </span>
-          </div>
+          <span>
+            <i className="fa fa-envelope"></i>
+          </span>
         </a>
+        <p className="Contact-phone">Phone: 240-605-8753</p>
+        {/* <p className="Contact-paragraph">
+          Click the icon below to send me a message. I will respond as soon as
+          possible.
+        </p> */}
       </div>
     );
   }

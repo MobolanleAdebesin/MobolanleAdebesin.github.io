@@ -32,10 +32,6 @@ class App extends Component {
   };
   closeMenu = e => {
     e.persist();
-    let menu = document.getElementById("menu");
-    let slidingNav = document.getElementById("slidingNav");
-    let slidingList = document.getElementById("slidingList");
-    console.log(e.target.className);
     if (
       e.target.className !== "App-slide-navigation" &&
       e.target.className !== "App-slide-menu" &&
@@ -87,19 +83,13 @@ class App extends Component {
               onClick={this.toggleSlidingMenu}
             ></i>
           </div>
-          <div
-            className="App-slide-menu"
-            id="menu"
-            ref={this.myMenu}
-            onClick={this.getWidth}
-            style={this.state.style}
-          >
-            <nav className="App-slide-navigation" id="slidingNav">
+          <div className="App-slide-menu" style={this.state.style}>
+            <nav className="App-slide-navigation">
               <Link to="/" className="App-navigation-link">
                 Home
               </Link>
               <div>
-                <ul className="App-unordered-list" id="slidingList">
+                <ul className="App-unordered-list">
                   <li>
                     <Link className="App-navigation-link" to="/Projects">
                       Projects
@@ -120,6 +110,41 @@ class App extends Component {
                       Resume
                     </a>
                   </li>
+                  <div className="App-icon-container">
+                    <li>
+                      <a
+                        href="https://github.com/MobolanleAdebesin"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="fa fa-github-square fa-2x"
+                        id="github"
+                      >
+                        <span className="App-transparent-text">Github</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/mobolanle-adebesin/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="fa fa-linkedin fa-2x"
+                        id="linkedin"
+                      >
+                        <span className="App-transparent-text">LinkedIn</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://medium.com/@bolaadebesin"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="fa fa-medium fa-2x"
+                        id="medium"
+                      >
+                        <span className="App-transparent-text">Medium</span>
+                      </a>
+                    </li>
+                  </div>
                 </ul>
               </div>
             </nav>
