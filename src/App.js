@@ -9,8 +9,13 @@ import myResume from "./myResume.pdf";
 class App extends Component {
   constructor(props) {
     super(props);
+    this.myMenu = React.createRef();
     this.state = {
-      nav: "App-navigation"
+      nav: "App-navigation",
+      style: {
+        left: "-160px",
+        transition: "left 1s"
+      }
     };
   }
 
@@ -18,6 +23,12 @@ class App extends Component {
     this.state.nav === "App-navigation"
       ? this.setState({ nav: "hidden" })
       : this.setState({ nav: "App-navigation" });
+    this.hideSlidingMenu();
+  };
+  hideSlidingMenu = () => {
+    this.state.style.left === "-160px"
+      ? this.setState({ style: { ...this.state.style, left: "0px" } })
+      : this.setState({ style: { ...this.state.style, left: "-160px" } });
   };
 
   render() {
@@ -29,15 +40,24 @@ class App extends Component {
               Home
             </Link>
             <div>
-              <ul>
-                <li className="App-navigation-link">
-                  <Link to="/Projects">Projects</Link>
+              <ul className="App-unordered-list">
+                <li>
+                  <Link className="App-navigation-link" to="/Projects">
+                    Projects
+                  </Link>
                 </li>
-                <li className="App-navigation-link">
-                  <Link to="/Contact">Contact</Link>
+                <li>
+                  <Link className="App-navigation-link" to="/Contact">
+                    Contact
+                  </Link>
                 </li>
-                <li className="App-navigation-link">
-                  <a href={myResume} target="__blank" rel="noopener noreferrer">
+                <li>
+                  <a
+                    className="App-navigation-link"
+                    href={myResume}
+                    target="__blank"
+                    rel="noopener noreferrer"
+                  >
                     Resume
                   </a>
                 </li>
@@ -47,24 +67,35 @@ class App extends Component {
           <div className="App-bars-container">
             <i className="fa fa-bars App-bars" onClick={this.hideNavbar}></i>
           </div>
-          <div className="App-slide-menu">
+          <div
+            className="App-slide-menu"
+            id="menu"
+            ref={this.myMenu}
+            onClick={this.getWidth}
+            style={this.state.style}
+          >
             <nav className="App-slide-navigation">
               <Link to="/" className="App-home-link">
                 Home
               </Link>
               <div>
-                <ul>
-                  <li className="App-navigation-link">
-                    <Link to="/Projects">Projects</Link>
+                <ul className="App-unordered-list">
+                  <li>
+                    <Link className="App-navigation-link" to="/Projects">
+                      Projects
+                    </Link>
                   </li>
-                  <li className="App-navigation-link">
-                    <Link to="/Contact">Contact</Link>
+                  <li>
+                    <Link className="App-navigation-link" to="/Contact">
+                      Contact
+                    </Link>
                   </li>
-                  <li className="App-navigation-link">
+                  <li>
                     <a
                       href={myResume}
                       target="__blank"
                       rel="noopener noreferrer"
+                      className="App-navigation-link"
                     >
                       Resume
                     </a>

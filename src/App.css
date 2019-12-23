@@ -19,7 +19,7 @@
   width: 50%;
   background-color: lightblue;
   position: absolute;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .App-bars-container {
@@ -28,6 +28,22 @@
   /* background-color: lightblue; */
   margin: 1rem;
 }
+.App-slide-menu {
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+.App-unordered-list {
+  list-style: none;
+}
+.App-navigation-link,
+.App-home-link {
+  color: black;
+}
+.App-navigation-link:hover,
+.App-home-link:hover {
+  color: Tomato;
+}
+
 .hidden {
   display: none;
 }
