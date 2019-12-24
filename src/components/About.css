@@ -1,8 +1,14 @@
 .About-main-container {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 1rem;
+}
+.About-profile-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .About-profile {
@@ -18,6 +24,9 @@
 .About-links {
   display: none;
 }
+.About-name {
+  margin-bottom: 2rem;
+}
 
 @media all and (min-width: 768px) {
   .About-name {
@@ -32,7 +41,7 @@
   }
   .About-description {
     text-align: center;
-    padding: 1rem 3rem;
+    padding: 0 3rem;
     font-size: 2rem;
   }
   .About-links {
@@ -43,26 +52,4 @@
   }
 }
 @media all and (min-width: 1024px) {
-  .About-name {
-    font-size: 5rem;
-  }
-  .About-profile {
-    width: 20rem;
-  }
-  .About-title {
-    font-size: 4rem;
-    margin: 3rem;
-  }
-  .About-description {
-    text-align: center;
-    padding: 2rem 4rem;
-    font-size: 3rem;
-  }
-  .About-links {
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-    margin: 1rem 0;
-    font-size: 2rem;
-  }
 }

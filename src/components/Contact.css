@@ -22,7 +22,7 @@
   }
   .Contact-quote {
     font-size: 2rem;
-    padding: 3rem;
+    padding: 3rem 15rem;
   }
   .fa-envelope {
     font-size: 2rem;
@@ -32,7 +32,7 @@
     font-size: 2rem;
   }
 }
-@media all and (min-width: 1024px) {
+/* @media all and (min-width: 1024px) {
   .Contact-header {
     font-size: 5rem;
   }
@@ -47,4 +47,4 @@
   .Contact-phone {
     font-size: 3rem;
   }
-}
+} */
