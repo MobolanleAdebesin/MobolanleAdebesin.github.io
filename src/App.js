@@ -9,14 +9,14 @@ import myResume from "./myResume.pdf";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.myMenu = React.createRef();
     this.state = {
       nav: "App-navigation",
       style: {
         left: "-50%",
         transition: "left 1s"
       },
-      isMenuOpen: false
+      isMenuOpen: false,
+      active: ""
     };
   }
   toggleSlidingMenu = () => {
@@ -43,7 +43,11 @@ class App extends Component {
       }
     }
   };
-
+  changeActive = e => {
+    e.persist();
+    console.log(e.target.text);
+    this.setState({ active: e.target.text });
+  };
   render() {
     return (
       <Router>
@@ -51,17 +55,44 @@ class App extends Component {
           <nav className="App-navigation">
             <ul className="App-unordered-list">
               <li>
-                <Link to="/" className="App-navigation-link">
+                <Link
+                  to="/"
+                  className="App-navigation-link"
+                  onClick={this.changeActive}
+                  style={
+                    this.state.active === "Home"
+                      ? { color: "tomato", fontFamily: "Pacifico" }
+                      : { color: "black" }
+                  }
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link className="App-navigation-link" to="/Projects">
+                <Link
+                  className="App-navigation-link"
+                  to="/Projects"
+                  onClick={this.changeActive}
+                  style={
+                    this.state.active === "Projects"
+                      ? { color: "tomato", fontFamily: "Pacifico" }
+                      : { color: "black" }
+                  }
+                >
                   Projects
                 </Link>
               </li>
               <li>
-                <Link className="App-navigation-link" to="/Contact">
+                <Link
+                  className="App-navigation-link"
+                  to="/Contact"
+                  onClick={this.changeActive}
+                  style={
+                    this.state.active === "Contact"
+                      ? { color: "tomato", fontFamily: "Pacifico" }
+                      : { color: "black" }
+                  }
+                >
                   Contact
                 </Link>
               </li>
@@ -85,18 +116,45 @@ class App extends Component {
           </div>
           <div className="App-slide-menu" style={this.state.style}>
             <nav className="App-slide-navigation">
-              <Link to="/" className="App-navigation-link">
+              <Link
+                to="/"
+                className="App-navigation-link"
+                onClick={this.changeActive}
+                style={
+                  this.state.active === "Home"
+                    ? { color: "tomato", fontFamily: "Pacifico" }
+                    : { color: "black" }
+                }
+              >
                 Home
               </Link>
               <div>
                 <ul className="App-unordered-list">
                   <li>
-                    <Link className="App-navigation-link" to="/Projects">
+                    <Link
+                      className="App-navigation-link"
+                      to="/Projects"
+                      onClick={this.changeActive}
+                      style={
+                        this.state.active === "Projects"
+                          ? { color: "tomato", fontFamily: "Pacifico" }
+                          : { color: "black" }
+                      }
+                    >
                       Projects
                     </Link>
                   </li>
                   <li>
-                    <Link className="App-navigation-link" to="/Contact">
+                    <Link
+                      className="App-navigation-link"
+                      to="/Contact"
+                      onClick={this.changeActive}
+                      style={
+                        this.state.active === "Contact"
+                          ? { color: "tomato", fontFamily: "Pacifico" }
+                          : { color: "black" }
+                      }
+                    >
                       Contact
                     </Link>
                   </li>

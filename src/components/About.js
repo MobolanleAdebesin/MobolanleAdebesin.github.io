@@ -29,7 +29,7 @@ class About extends Component {
             rel="noopener noreferrer"
             id="github"
           >
-            <i className="fa fa-github-square fa-3x"></i>
+            <i className="fa fa-github-square fa-2x"></i>
           </a>
 
           <a
@@ -38,7 +38,7 @@ class About extends Component {
             rel="noopener noreferrer"
             id="linkedin"
           >
-            <i className="fa fa-linkedin fa-3x"></i>
+            <i className="fa fa-linkedin fa-2x"></i>
           </a>
 
           <a
@@ -47,7 +47,7 @@ class About extends Component {
             rel="noopener noreferrer"
             id="medium"
           >
-            <i className="fa fa-medium fa-3x"></i>
+            <i className="fa fa-medium fa-2x"></i>
           </a>
         </div>
       </main>

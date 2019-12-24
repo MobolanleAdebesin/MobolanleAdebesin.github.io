@@ -86,7 +86,8 @@ export default [
   {
     name: "Tinder Mock",
     image: require("../components/images/Tinder-SS.png"),
-    description: "A website mock up based on a popular dating application",
+    description:
+      "Inspired by the popular dating application, Tinder, this website serves as a mockup with a focus on responsive design and CSS animations.",
     stack: ["HTML", " CSS"],
     link: {
       Repo: "https://github.com/MobolanleAdebesin/mock-tinder-site",

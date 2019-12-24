@@ -6,7 +6,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="Projects">
-        <h1 className="Project-header">Projects </h1>
+        <h2 className="Project-header">Projects </h2>
         {projects.map(project => (
           <div key={project.name} className="Project-card">
             <img className="Project-image" src={project.image} alt="" />
@@ -36,6 +36,9 @@ class Projects extends Component {
                 </a>
               ) : null}
               <p className="Project-info">{project.description}</p>
+              <p className="Project-stack">
+                Stack: <em>{project.stack}</em>
+              </p>
             </div>
           </div>
         ))}

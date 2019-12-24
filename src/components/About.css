@@ -25,7 +25,16 @@
   display: none;
 }
 .About-name {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media all and (min-width: 500px) {
+  .About-links {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
 }
 
 @media all and (min-width: 768px) {
@@ -36,20 +45,12 @@
     width: 15rem;
   }
   .About-title {
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 2rem;
   }
   .About-description {
     text-align: center;
     padding: 0 3rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
-  .About-links {
-    display: flex;
-    width: 30%;
-    justify-content: space-between;
-    margin: 1rem 0;
-  }
-}
-@media all and (min-width: 1024px) {
 }

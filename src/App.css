@@ -1,18 +1,25 @@
-@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800|Pacifico&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* body {
+  background-color: rgba(173, 216, 230, 0.523);
+} */
 
 .App-container {
   display: flex;
   flex-direction: column;
   height: 100vh;
   position: relative;
+  font-family: "Montserrat", sans-serif;
 }
 .App-navigation {
   display: none;
+}
+h2 {
+  font-family: "Pacifico", cursive;
 }
 a {
   cursor: pointer;
@@ -21,7 +28,7 @@ a {
 .App-slide-menu {
   height: 100%;
   width: 50%;
-  background-color: lightblue;
+  background-color: rgb(234, 185, 176);
   position: fixed;
   opacity: 0.9;
   z-index: 2;
@@ -53,6 +60,9 @@ li {
   color: black;
   cursor: pointer;
 }
+.fa:hover {
+  color: tomato;
+}
 .App-transparent-text {
   opacity: 0;
 }
@@ -60,8 +70,7 @@ li {
 .hidden {
   display: none;
 }
-
-@media all and (min-width: 768px) {
+@media all and (min-width: 500px) {
   .App-bars-container {
     display: none;
   }
@@ -77,12 +86,6 @@ li {
     justify-content: space-evenly;
   }
   .App-navigation-link {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
-
-/* @media all and (min-width: 1024px) {
-  .App-navigation-link {
-    font-size: 2rem;
-  }
-} */
