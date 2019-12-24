@@ -76,7 +76,6 @@ li {
     display: flex;
     justify-content: space-evenly;
   }
-
   .App-navigation-link {
     font-size: 2rem;
   }

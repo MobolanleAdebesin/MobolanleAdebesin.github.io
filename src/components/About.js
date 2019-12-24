@@ -18,6 +18,34 @@ class About extends Component {
           discovery drives me to relentlessly pursue
           <strong> [creative] </strong> solutions to complex problems.
         </p>
+        <div className="About-links">
+          <a
+            href="https://github.com/MobolanleAdebesin"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="github"
+          >
+            <i className="fa fa-github-square fa-3x"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/mobolanle-adebesin/"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="linkedin"
+          >
+            <i className="fa fa-linkedin fa-3x"></i>
+          </a>
+
+          <a
+            href="https://medium.com/@bolaadebesin"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="medium"
+          >
+            <i className="fa fa-medium fa-3x"></i>
+          </a>
+        </div>
       </main>
     );
   }
