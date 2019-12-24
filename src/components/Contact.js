@@ -5,8 +5,8 @@ class Contact extends Component {
   render() {
     return (
       <div className="Contact">
-        <h2> Keep in Touch</h2>
-        <blockquote>
+        <h2 className="Contact-header"> Keep in Touch</h2>
+        <blockquote className="Contact-quote">
           The most important things in life are the connections you make with
           others. <cite> ~ Tom Ford</cite>
         </blockquote>
@@ -22,11 +22,7 @@ class Contact extends Component {
             <i className="fa fa-envelope"></i>
           </span>
         </a>
-        <p className="Contact-phone">Phone: 240-605-8753</p>
-        {/* <p className="Contact-paragraph">
-          Click the icon below to send me a message. I will respond as soon as
-          possible.
-        </p> */}
+        <p className="Contact-phone">Phone: (240)-605-8753</p>
       </div>
     );
   }

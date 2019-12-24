@@ -15,3 +15,20 @@
 .fa-envelope {
   margin-bottom: 1rem;
 }
+
+@media all and (min-width: 768px) {
+  .Contact-header {
+    font-size: 4rem;
+  }
+  .Contact-quote {
+    font-size: 2rem;
+    padding: 3rem;
+  }
+  .fa-envelope {
+    font-size: 2rem;
+  }
+  .Contact-email,
+  .Contact-phone {
+    font-size: 2rem;
+  }
+}
