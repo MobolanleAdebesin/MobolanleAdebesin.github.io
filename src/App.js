@@ -48,34 +48,34 @@ class App extends Component {
     return (
       <Router>
         <div className="App-container" onClick={this.closeMenu}>
-          <nav className="hidden">
-            <Link to="/" className="App-navigation-link">
-              Home
-            </Link>
-            <div>
-              <ul className="App-unordered-list">
-                <li>
-                  <Link className="App-navigation-link" to="/Projects">
-                    Projects
-                  </Link>
-                </li>
-                <li>
-                  <Link className="App-navigation-link" to="/Contact">
-                    Contact
-                  </Link>
-                </li>
-                <li>
-                  <a
-                    className="App-navigation-link"
-                    href={myResume}
-                    target="__blank"
-                    rel="noopener noreferrer"
-                  >
-                    Resume
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <nav className="App-navigation">
+            <ul className="App-unordered-list">
+              <li>
+                <Link to="/" className="App-navigation-link">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link className="App-navigation-link" to="/Projects">
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link className="App-navigation-link" to="/Contact">
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <a
+                  className="App-navigation-link"
+                  href={myResume}
+                  target="__blank"
+                  rel="noopener noreferrer"
+                >
+                  Resume
+                </a>
+              </li>
+            </ul>
           </nav>
           <div className="App-bars-container">
             <i

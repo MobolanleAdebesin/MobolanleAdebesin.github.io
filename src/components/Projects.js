@@ -3,20 +3,13 @@ import "./Projects.css";
 import projects from "../data/projects.js";
 
 class Projects extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div className="Projects">
         <h1>Projects </h1>
         {projects.map(project => (
           <div key={project.name} className="Projects-card">
-            <img
-              className="Project-image"
-              src={project.image}
-              alt="project-image"
-            />
+            <img className="Project-image" src={project.image} alt="" />
             <div className="Project-overlay"></div>
             <div className="Project-info-container">
               <h3 className="Project-name">{project.name}</h3>

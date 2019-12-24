@@ -11,6 +11,9 @@
   height: 100vh;
   position: relative;
 }
+.App-navigation {
+  display: none;
+}
 a {
   cursor: pointer;
 }
@@ -27,7 +30,6 @@ a {
 .App-bars-container {
   display: flex;
   justify-content: flex-end;
-  /* background-color: lightblue; */
   margin: 1rem;
 }
 .App-slide-menu {
@@ -57,4 +59,26 @@ li {
 
 .hidden {
   display: none;
+}
+
+@media all and (min-width: 767px) {
+  .App-bars-container {
+    display: none;
+  }
+  .App-slide-menu {
+    display: none;
+  }
+  .App-navigation {
+    display: grid;
+    margin: 1rem 0;
+  }
+  .App-unordered-list {
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-evenly;
+  }
+
+  .App-navigation-link {
+    font-size: 1.5rem;
+  }
 }
