@@ -56,7 +56,7 @@
   }
   .Project-header {
     grid-column: 1 / span 2;
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .Project-card {
     margin: 1rem;

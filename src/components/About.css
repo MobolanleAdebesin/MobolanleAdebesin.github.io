@@ -1,56 +1,21 @@
-.About-main-container {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 1rem;
-}
-.About-profile-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.About-profile {
-  width: 10rem;
-}
-
-.About-title {
+.About {
   margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.About-description {
-  text-align: center;
-}
-.About-links {
-  display: none;
-}
-.About-name {
+.About-about-me {
   margin-bottom: 1rem;
 }
 
-@media all and (min-width: 500px) {
-  .About-links {
-    display: flex;
-    width: 30%;
-    justify-content: space-between;
-    margin: 1rem 0;
-  }
-}
-
 @media all and (min-width: 768px) {
-  .About-name {
-    font-size: 4rem;
-  }
-  .About-profile {
-    width: 15rem;
-  }
-  .About-title {
-    font-size: 2rem;
+  .About {
     margin: 2rem;
   }
-  .About-description {
-    text-align: center;
-    padding: 0 3rem;
+  .About-about-me {
+    font-size: 3rem;
+  }
+  .About-paragraph {
     font-size: 1.5rem;
   }
 }

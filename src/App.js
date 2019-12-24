@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./App.css";
 import Projects from "./components/Projects.js";
-import Contact from "./components/Contact.js";
 import About from "./components/About.js";
+import Contact from "./components/Contact.js";
+import Home from "./components/Home.js";
 import myResume from "./myResume.pdf";
 
 class App extends Component {
@@ -70,6 +71,20 @@ class App extends Component {
               </li>
               <li>
                 <Link
+                  to="/About"
+                  className="App-navigation-link"
+                  onClick={this.changeActive}
+                  style={
+                    this.state.active === "About"
+                      ? { color: "tomato", fontFamily: "Pacifico" }
+                      : { color: "black" }
+                  }
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
                   className="App-navigation-link"
                   to="/Projects"
                   onClick={this.changeActive}
@@ -130,6 +145,20 @@ class App extends Component {
               </Link>
               <div>
                 <ul className="App-unordered-list">
+                  <li>
+                    <Link
+                      to="/About"
+                      className="App-navigation-link"
+                      onClick={this.changeActive}
+                      style={
+                        this.state.active === "About"
+                          ? { color: "tomato", fontFamily: "Pacifico" }
+                          : { color: "black" }
+                      }
+                    >
+                      About
+                    </Link>
+                  </li>
                   <li>
                     <Link
                       className="App-navigation-link"
@@ -207,7 +236,8 @@ class App extends Component {
               </div>
             </nav>
           </div>
-          <Route path="/" exact component={About}></Route>
+          <Route path="/" exact component={Home}></Route>
+          <Route path="/About" exact component={About}></Route>
           <Route path="/Projects" exact component={Projects}></Route>
           <Route path="/Contact" exact component={Contact}></Route>
         </div>

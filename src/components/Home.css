@@ -1,0 +1,56 @@
+.Home-main-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+}
+.Home-profile-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Home-profile {
+  width: 10rem;
+}
+
+.Home-title {
+  margin: 1rem;
+}
+.Home-description {
+  text-align: center;
+}
+.Home-links {
+  display: none;
+}
+.Home-name {
+  margin-bottom: 1rem;
+}
+
+@media all and (min-width: 500px) {
+  .Home-links {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .Home-name {
+    font-size: 3rem;
+  }
+  .Home-profile {
+    width: 15rem;
+  }
+  .Home-title {
+    font-size: 2rem;
+    margin: 2rem;
+  }
+  .Home-description {
+    text-align: center;
+    padding: 0 3rem;
+    font-size: 1.5rem;
+  }
+}
