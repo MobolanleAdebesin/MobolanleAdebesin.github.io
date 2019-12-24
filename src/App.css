@@ -28,7 +28,7 @@ a {
 .App-slide-menu {
   height: 100%;
   width: 50%;
-  background-color: rgb(234, 185, 176);
+  background-color: rgba(211, 211, 211, 0.763);
   position: fixed;
   opacity: 0.9;
   z-index: 2;
