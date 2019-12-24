@@ -19,7 +19,7 @@ a {
   height: 100%;
   width: 50%;
   background-color: lightblue;
-  position: absolute;
+  position: fixed;
   opacity: 0.9;
   z-index: 2;
 }
