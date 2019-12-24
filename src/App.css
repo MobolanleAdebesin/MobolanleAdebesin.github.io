@@ -80,3 +80,9 @@ li {
     font-size: 2rem;
   }
 }
+
+@media all and (min-width: 1024px) {
+  .App-navigation-link {
+    font-size: 3rem;
+  }
+}

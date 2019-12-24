@@ -42,3 +42,27 @@
     margin: 1rem 0;
   }
 }
+@media all and (min-width: 1024px) {
+  .About-name {
+    font-size: 5rem;
+  }
+  .About-profile {
+    width: 20rem;
+  }
+  .About-title {
+    font-size: 4rem;
+    margin: 3rem;
+  }
+  .About-description {
+    text-align: center;
+    padding: 2rem 4rem;
+    font-size: 3rem;
+  }
+  .About-links {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin: 1rem 0;
+    font-size: 2rem;
+  }
+}
