@@ -15,3 +15,21 @@
 .About-description {
   text-align: center;
 }
+
+@media all and (min-width: 768px) {
+  .About-name {
+    font-size: 4rem;
+  }
+  .About-profile {
+    width: 15rem;
+  }
+  .About-title {
+    font-size: 3rem;
+    margin: 2rem;
+  }
+  .About-description {
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+  }
+}
