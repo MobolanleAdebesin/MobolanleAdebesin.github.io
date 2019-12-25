@@ -4,13 +4,16 @@
   flex-direction: column;
   align-items: center;
 }
+.About-paragraph {
+  margin-bottom: 0;
+}
 .About-about-me {
   margin-bottom: 1rem;
 }
 hr {
   width: 50%;
-  margin: 2rem auto;
   border-top: 0.5rem dotted rgba(255, 99, 71, 0.516);
+  margin: 2rem auto;
 }
 
 @media all and (min-width: 768px) {

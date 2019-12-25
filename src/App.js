@@ -33,15 +33,8 @@ class App extends Component {
   };
   closeMenu = e => {
     e.persist();
-    if (
-      e.target.className !== "App-slide-navigation" &&
-      e.target.className !== "App-slide-menu" &&
-      e.target.className !== "App-unordered-list" &&
-      e.target.className !== "App-navigation-link"
-    ) {
-      if (this.state.isMenuOpen) {
-        this.toggleSlidingMenu();
-      }
+    if (this.state.isMenuOpen) {
+      this.toggleSlidingMenu();
     }
   };
   changeActive = e => {

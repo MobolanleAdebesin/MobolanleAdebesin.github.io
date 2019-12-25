@@ -10,7 +10,9 @@ class About extends Component {
           B.S. in Biological Sciences in 2016. After spending the last two years
           as an MD/Ph.D. student at Vanderbilt University School of Medicine, I
           made the decision to take some time off to pursue my other passions.
-          <hr />
+        </p>
+        <hr />
+        <p className="About-paragraph">
           Although my path to programming is probably atypical, the things that
           I love about coding, the level of creativity and critical thinking
           that it requires, are the same things that drew me to medicine. The
@@ -18,7 +20,9 @@ class About extends Component {
           in a fast-paced, and dynamic environment, how to collaborate with all
           kinds of people and teams, and the value of consistent, efficient, and
           open communication.
-          <hr />
+        </p>
+        <hr />
+        <p className="About-paragraph">
           When I'm not coding, I like reading science fiction novels and mixing
           up different DIY skin and hair care products! (My favorite concoction
           thus fair is a flaxseed and Rosemary hair gel).
