@@ -39,7 +39,6 @@ class App extends Component {
   };
   changeActive = e => {
     e.persist();
-    console.log(e.target.text);
     this.setState({ active: e.target.text });
   };
   render() {
