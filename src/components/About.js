@@ -25,7 +25,7 @@ class About extends Component {
         <p className="About-paragraph">
           When I'm not coding, I like reading science fiction novels and mixing
           up different DIY skin and hair care products! (My favorite concoction
-          thus fair is a flaxseed and Rosemary hair gel).
+          thus far is a flaxseed and Rosemary hair gel).
         </p>
       </div>
     );
