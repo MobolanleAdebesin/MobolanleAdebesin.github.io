@@ -10,7 +10,10 @@ class Contact extends Component {
           The most important things in life are the connections you make with
           others. <cite> ~ Tom Ford</cite>
         </blockquote>
-
+        <h4 className="Contact-call-to-action">
+          Please feel free to contact me to discuss my projects or
+          opportunities!
+        </h4>
         <p className="Contact-email">bolaadebesin@gmail.com</p>
         <a
           href="mailto:bolaadebesin@gmail.com"

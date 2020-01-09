@@ -5,8 +5,12 @@
   align-items: center;
   text-align: center;
 }
+.Contact-call-to-action {
+  width: 50%;
+  margin: 2rem;
+}
 .Contact-header {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .Contact-quote {
   width: 50%;

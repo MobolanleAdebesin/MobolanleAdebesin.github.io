@@ -3,7 +3,7 @@
   text-align: center;
 }
 .Project-card {
-  border: black 1px solid;
+  border: slategray 1px solid;
   border-radius: 12px;
   height: 25rem;
   margin: 2rem 0;
@@ -13,7 +13,7 @@
 .Project-overlay {
   height: 100%;
   width: 100%;
-  background: rgb(255, 239, 213);
+  background: rgba(235, 234, 233, 0.92);
   opacity: 0.9;
   z-index: 1;
   position: absolute;
@@ -37,10 +37,11 @@
 }
 .Project-info {
   margin: 1rem;
+  font-size: 1.1rem;
 }
 .Project-stack {
   margin: 1rem;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .Project-fa {
@@ -57,6 +58,7 @@
   .Project-header {
     grid-column: 1 / span 2;
     font-size: 3rem;
+    margin-bottom: 3rem;
   }
   .Project-card {
     margin: 1rem;

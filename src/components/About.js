@@ -5,6 +5,8 @@ class About extends Component {
     return (
       <div className="About">
         <h2 className="About-about-me">About Me</h2>
+
+        <h3 className="About-section-header">What I did</h3>
         <p className="About-paragraph">
           I graduated from the University of Maryland Baltimore County with a
           B.S. in Biological Sciences in 2016. After spending the last two years
@@ -12,6 +14,8 @@ class About extends Component {
           made the decision to take some time off to pursue my other passions.
         </p>
         <hr />
+
+        <h3 className="About-section-header">What I'm Doing</h3>
         <p className="About-paragraph">
           Although my path to programming is probably atypical, the things that
           I love about coding, the level of creativity and critical thinking
@@ -22,6 +26,8 @@ class About extends Component {
           open communication.
         </p>
         <hr />
+
+        <h3 className="About-section-header">What I Enjoy</h3>
         <p className="About-paragraph">
           When I'm not coding, I like reading science fiction novels and mixing
           up different DIY skin and hair care products! (My favorite concoction

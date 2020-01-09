@@ -8,7 +8,7 @@
   margin-bottom: 0;
 }
 .About-about-me {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 hr {
   width: 50%;
@@ -22,6 +22,12 @@ hr {
   }
   .About-about-me {
     font-size: 3rem;
+  }
+  .About-section-header {
+    width: 100%;
+    text-align: left;
+    margin: 1rem;
+    font-weight: 700;
   }
   .About-paragraph {
     font-size: 1.5rem;
