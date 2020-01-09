@@ -13,7 +13,7 @@
 .Project-overlay {
   height: 100%;
   width: 100%;
-  background: rgba(235, 234, 233, 0.92);
+  background: rgba(235, 234, 233, 0.95);
   opacity: 0.9;
   z-index: 1;
   position: absolute;
