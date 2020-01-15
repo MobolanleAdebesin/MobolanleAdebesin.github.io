@@ -15,7 +15,7 @@ export default [
     ],
     link: {
       Repo: "https://github.com/MobolanleAdebesin/bookpals-front-end",
-      Deployed: "https://stupefied-knuth-a58fed.netlify.com/"
+      Deployed: "https://bookpals.netlify.com/"
     }
   },
   {
